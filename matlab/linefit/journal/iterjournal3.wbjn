@@ -1,0 +1,50 @@
+﻿
+designPoint1.SetParameterExpression(
+    Parameter=parameter1,
+    Expression="C_1")
+designPoint1.SetParameterExpression(
+    Parameter=parameter2,
+    Expression="C_2")
+designPoint1.SetParameterExpression(
+    Parameter=parameter3,
+    Expression="C_3")
+designPoint1.SetParameterExpression(
+    Parameter=parameter4,
+    Expression="C_4")
+designPoint1.SetParameterExpression(
+    Parameter=parameter5,
+    Expression="C_1")
+designPoint1.SetParameterExpression(
+    Parameter=parameter6,
+    Expression="C_2")
+designPoint1.SetParameterExpression(
+    Parameter=parameter7,
+    Expression="C_3")
+designPoint1.SetParameterExpression(
+    Parameter=parameter8,
+    Expression="C_4")
+designPoint1.SetParameterExpression(
+    Parameter=parameter9,
+    Expression="C_1")
+designPoint1.SetParameterExpression(
+    Parameter=parameter10,
+    Expression="C_2")
+designPoint1.SetParameterExpression(
+    Parameter=parameter11,
+    Expression="C_3")
+designPoint1.SetParameterExpression(
+    Parameter=parameter12,
+    Expression="C_4")
+modelComponent1.Update(AllDependencies=True)
+setupComponent1.Update(AllDependencies=True)
+solutionComponent1.Update(AllDependencies=True)
+resultsComponent1.Update(AllDependencies=True)
+modelComponent2.Update(AllDependencies=True)
+setupComponent2.Update(AllDependencies=True)
+solutionComponent2.Update(AllDependencies=True)
+resultsComponent2.Update(AllDependencies=True)
+modelComponent3.Update(AllDependencies=True)
+setupComponent3.Update(AllDependencies=True)
+solutionComponent3.Update(AllDependencies=True)
+resultsComponent3.Update(AllDependencies=True)
+Parameters.ExportAllDesignPointsData(FilePath="C:/linefitcode/linefit_v2/out/owt.csv")

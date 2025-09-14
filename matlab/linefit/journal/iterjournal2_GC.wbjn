@@ -1,0 +1,77 @@
+﻿
+parameter1 = Parameters.GetParameter(Name="P1")
+designPoint1.SetParameterExpression(
+    Parameter=parameter1,
+    Expression="C_1")
+parameter2 = Parameters.GetParameter(Name="P2")
+designPoint1.SetParameterExpression(
+    Parameter=parameter2,
+    Expression="C_2")
+parameter3 = Parameters.GetParameter(Name="P3")
+designPoint1.SetParameterExpression(
+    Parameter=parameter3,
+    Expression="C_3")
+parameter4 = Parameters.GetParameter(Name="P4")
+designPoint1.SetParameterExpression(
+    Parameter=parameter4,
+    Expression="C_4")
+parameter5 = Parameters.GetParameter(Name="P5")
+designPoint1.SetParameterExpression(
+    Parameter=parameter5,
+    Expression="C_1")
+parameter6 = Parameters.GetParameter(Name="P6")
+designPoint1.SetParameterExpression(
+    Parameter=parameter6,
+    Expression="C_2")
+parameter7 = Parameters.GetParameter(Name="P7")
+designPoint1.SetParameterExpression(
+    Parameter=parameter7,
+    Expression="C_3")
+parameter8 = Parameters.GetParameter(Name="P8")
+designPoint1.SetParameterExpression(
+    Parameter=parameter8,
+    Expression="C_4")
+parameter9 = Parameters.GetParameter(Name="P9")
+designPoint1.SetParameterExpression(
+    Parameter=parameter9,
+    Expression="C_1")
+parameter10 = Parameters.GetParameter(Name="P10")
+designPoint1.SetParameterExpression(
+    Parameter=parameter10,
+    Expression="C_2")
+parameter11 = Parameters.GetParameter(Name="P11")
+designPoint1.SetParameterExpression(
+    Parameter=parameter11,
+    Expression="C_3")
+parameter12 = Parameters.GetParameter(Name="P12")
+designPoint1.SetParameterExpression(
+    Parameter=parameter12,
+    Expression="C_4")
+system1 = GetSystem(Name="SYS")
+modelComponent1 = system1.GetComponent(Name="Model")
+modelComponent1.Update(AllDependencies=True)
+setupComponent1 = system1.GetComponent(Name="Setup")
+setupComponent1.Update(AllDependencies=True)
+solutionComponent1 = system1.GetComponent(Name="Solution")
+solutionComponent1.Update(AllDependencies=True)
+resultsComponent1 = system1.GetComponent(Name="Results")
+resultsComponent1.Update(AllDependencies=True)
+system2 = GetSystem(Name="SYS 1")
+modelComponent2 = system2.GetComponent(Name="Model")
+modelComponent2.Update(AllDependencies=True)
+setupComponent2 = system2.GetComponent(Name="Setup")
+setupComponent2.Update(AllDependencies=True)
+solutionComponent2 = system2.GetComponent(Name="Solution")
+solutionComponent2.Update(AllDependencies=True)
+resultsComponent2 = system2.GetComponent(Name="Results")
+resultsComponent2.Update(AllDependencies=True)
+system3 = GetSystem(Name="SYS 2")
+modelComponent3 = system3.GetComponent(Name="Model")
+modelComponent3.Update(AllDependencies=True)
+setupComponent3 = system3.GetComponent(Name="Setup")
+setupComponent3.Update(AllDependencies=True)
+solutionComponent3 = system3.GetComponent(Name="Solution")
+solutionComponent3.Update(AllDependencies=True)
+resultsComponent3 = system3.GetComponent(Name="Results")
+resultsComponent3.Update(AllDependencies=True)
+Parameters.ExportAllDesignPointsData(FilePath="C:/linefitcode/linefit_v2/out/out1.csv")

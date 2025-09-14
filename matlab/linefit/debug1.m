@@ -1,0 +1,15 @@
+clc; clear; close all;
+% 제공된 문자열 (예시)
+str = 'epoch: 1, particle: 1, loss:   Inf [epoch: Inf, particle: Inf, loss:   Inf [epoch: Inf, particle: Inf, loss:   Inf [epoch: Inf, particle: Inf, loss:   Inf [epoch: Inf, particle: Inf, loss:   Inf [epoch: Inf, particle: Inf, loss:   Inf [epoch: Inf, particle: Inf, loss:   Inf [epoch: Inf, particle: Inf, loss:   Inf [epoch: Inf, particle: Inf, loss:   Inf [epoch: Inf, particle: Inf, loss:   Inf [epoch: Inf, particle: Inf, loss:   Inf [epoch: Inf, particle: Inf, loss:   Inf [epoch: Inf, particle: Inf, loss:   Inf [epoch: Inf, particle: Inf, loss:   Inf [epoch: Inf, particle: Inf, loss:   Inf [epoch: Inf, particle: Inf, loss:   Inf [epoch: Inf, particle: Inf, loss:   Inf [epoch: Inf, particle: Inf, loss:   Inf [epoch: Inf, particle: Inf, loss:   Inf [epoch: Inf, particle: Inf, loss:   Inf [epoch: Inf, particle: Inf, loss:   Inf [epoch: Inf, particle: Inf, loss:   Inf [epoch: Inf, particle: Inf, loss:   Inf [epoch: Inf, particle: Inf, loss:   Inf [epoch: Inf, particle: Inf, loss:   Inf [epoch: Inf, particle: Inf, loss:   Inf [epoch: Inf, particle: Inf, loss:   Inf [epoch: Inf, particle: Inf, loss:   Inf [epoch: Inf, particle: Inf, loss:   Inf [epoch: Inf, particle: Inf, loss:   Inf [epoch: Inf, particle: Inf, loss:   Inf [epoch: Inf, particle: Inf, loss:   Inf [epoch: Inf, particle: Inf, loss:   Inf [epoch: Inf, particle: Inf, loss:   Inf [epoch: Inf, particle: Inf, loss:   Inf [epoch: Inf, particle: Inf, loss:   Inf [epoch: Inf, particle: Inf, loss:   Inf [epoch: Inf, particle: Inf, loss:   Inf [epoch: Inf, particle: Inf, loss:   Inf [epoch: Inf, particle: Inf, loss:   Inf [epoch: Inf, particle: Inf, loss:   Inf [epoch: Inf, particle: Inf, loss:   Inf [epoch: Inf, particle: Inf, loss:   Inf [epoch: Inf, particle: Inf, loss:   Inf [epoch: Inf, particle: Inf, loss:   Inf [epoch: Inf, particle: Inf, loss:   Inf [epoch: Inf, particle: Inf, loss:   Inf [epoch: Inf, particle: Inf, loss:   Inf [epoch: Inf, particle: Inf, loss:   Inf [epoch: Inf, particle: Inf, loss:   Inf [epoch: Inf, particle: Inf, loss:   Inf [epoch: Inf, particle: Inf, loss:   Inf [epoch: Inf, particle: Inf, loss:   Inf [epoch: Inf, particle: Inf, loss:   Inf [epoch: Inf, particle: Inf, loss:   Inf [epoch: Inf, particle: Inf, loss:   Inf [epoch: Inf, particle: Inf, loss:   Inf [epoch: Inf, particle: Inf, loss:   Inf [epoch: Inf, particle: Inf, loss:   Inf [epoch: Inf, particle: Inf, loss:   Inf [epoch: Inf, particle: Inf, loss:   Inf [epoch: Inf, particle: Inf, loss:   Inf [epoch: Inf, particle: Inf, loss:   Inf [epoch: Inf, particle: Inf, loss:   Inf [epoch: Inf, particle: Inf, loss:   Inf [epoch: Inf, particle: Inf, loss:   Inf [epoch: Inf, particle: Inf, loss:   Inf [epoch: Inf, particle: -12.513,1.356,-0.728,14121.000]';
+
+% 찾고자 하는 패턴
+pattern = 'epoch: Inf, particle: Inf, loss:   Inf [';
+
+% 문자열에서 패턴 찾기
+matches = strfind(str, pattern);
+
+% 반복 횟수 계산
+numRepeats = length(matches);
+
+% 결과 출력
+fprintf('The pattern repeats %d times.\n', numRepeats);
